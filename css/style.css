@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400);
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #f7f7f7;
+  box-sizing: border-box;
+  background-color: #F06292;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+.intro {
+  position: fixed;
+  width: 100%;
+  line-height: 3.5em;
+  text-align: center;
+  padding: 100px 20px;
+  background-size: cover;
+  height: 100%;
+}
+
+.disclaimer {
+  position: fixed;
+  float: left;
+  max-height: 150px;
+  line-height: 1em;
+  bottom: 0;
+  /*  padding-bottom: 20px;
+    padding-left: 1em;*/
+  padding: 0px 2em 20px 2em;
+  margin: 0 auto;
+  font-size: .75em;
+}
+
+.hidden {
+  display: none;
+}
+
+.button-wrap {
+  margin-top: 1.5em;
+  width: 100%;
+  padding: auto 20px;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid #f7f7f7;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 20px;
+  overflow: hidden;
+  width: 150px;
+  transition: .3s;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+.button:active {
+  transform: scale(1.2);
+}
+.button:hover {
+  background-color: #62f0c0;
+}
+
+#yes-btn, #no-btn {
+  color: white;
+}
+
+.modal-wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fbd6e3;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-wrap.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.heart {
+  position: relative;
+  width: 250px;
+  height: 225px;
+  background-color: inherit;
+  top: 30%;
+  left: 50%;
+  margin: 0 -125px;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite;
+  -o-animation: heartbeat 1.5s ease-in-out infinite;
+  -moz-animation: heartbeat 1.5s ease-in-out infinite;
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.heart:before,
+.heart:after {
+  position: fixed;
+  content: "";
+  left: 125px;
+  top: 0;
+  width: 125px;
+  height: 200px;
+  background: #c0124d;
+  -moz-border-radius: 125px 125px 0 0;
+  -webkit-border-radius: 125px;
+  border-radius: 125px 125px 0 0;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+.heart:after {
+  left: 0;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+@-webkit-keyframes heartbeat {
+  0% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  50% {
+    -moz-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes heartbeat {
+  0% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  50% {
+    -moz-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
