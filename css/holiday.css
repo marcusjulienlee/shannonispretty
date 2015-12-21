@@ -80,11 +80,11 @@ figure img {
 }
 
 @media only screen 
-  and (min-device-width: 30em) {
-    figure > img {
+  and (min-device-width: 40em) {
+    figure img {
       width: 50%;
       height: 50%;
     }
 }
 
-@media (min-width: 30em) {body {font-size:1.25em;}}
+@media (min-width: 40em) {body {font-size:2em;}}
