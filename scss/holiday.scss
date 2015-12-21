@@ -1,0 +1,92 @@
+/* COLORS */
+$green: #0F8A5F;
+$red: #CC231E;
+$salmon: #F5624D;
+$white: #fff;
+$othergreen: #34A65F;
+
+
+/* FONTS */
+
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two:700italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:700);
+
+
+h1, h2, h3, p {
+  color: $white;
+  font-family: "Lato";
+}
+
+.intro {
+  text-transform: uppercase;
+  display: inline;
+  background: $red;
+  color: #fff; 
+  padding: .25em;
+  line-height: 1.25em;
+}
+
+.logo {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  margin: 20px auto 20px;
+}
+
+.logo > a {
+  display: inline-block;
+  font-family: 'Lobster Two', cursive;
+  font-weight: 700;
+  color: $white;
+  font-size: 2em;
+  letter-spacing: -1px;
+  -ms-transform: all .5s ease-in-out;
+  -webkit-transform: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  &:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+/* BACKGROUND/PAGE SETUP*/
+
+html, body {    
+    height: 100%;
+    width: 100%;
+	-webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+body, main, figure {
+    margin: 0;
+}
+
+.sky {
+  height: 100%;
+  background-color: $green;
+  display: block;
+  text-align: center;
+}
+
+figure {
+  position: relative;
+  img {
+    width: 40%;
+    height: 40%;
+    max-width: 350px;
+    min-width: 275px;
+    margin: 30px auto 15px;
+    transform: rotate(5deg);
+    border-style: solid;
+    border-color: $white;
+    border-width: 10px;
+    box-shadow: 0px 2px 2px #888;
+  -moz-box-shadow: 0px 2px 2px #888;
+  -webkit-box-shadow: 0px 2px 2px #888;
+  }
+}
+
