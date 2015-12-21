@@ -5,11 +5,7 @@ $(document).ready(function() {
     $('.modal-wrap').toggleClass('open');
     $('.heart').delay(600).fadeIn(1000);
   });
-<<<<<<< HEAD
-  // Test
-=======
-
->>>>>>> master
+  
   var count = 0;
   $('#no-btn').click(function() {
     count = count + 1;
