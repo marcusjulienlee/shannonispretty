@@ -90,3 +90,12 @@ figure {
   }
 }
 
+@media only screen 
+  and (min-device-width: 30em) {
+    figure > img {
+      width: 50%;
+      height: 50%;
+    }
+}
+@media (min-width: 30em) {body {font-size:1.25em;}}
+
