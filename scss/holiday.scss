@@ -90,3 +90,28 @@ figure {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .intro {
+    font-size: 7vw; 
+  }
+  
+  .logo a {
+    font-size: 7vw;
+  }
+  
+  figure img {
+    width: 50vmax;
+    height: 50vmax;
+  }
+}
+
+@media only screen
+  and (orientation: landscape) {
+    html, body {
+      position: relative;
+      background-color: $green;
+    }
+
+}
+
+
