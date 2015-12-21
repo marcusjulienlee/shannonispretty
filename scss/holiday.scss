@@ -90,7 +90,8 @@ figure {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px)
+and (orientation: portrait) {
   .intro {
     font-size: 7vw; 
   }
@@ -100,8 +101,8 @@ figure {
   }
   
   figure img {
-    width: 50vmax;
-    height: 50vmax;
+    height: 50vh;
+    width: 50vh;
   }
 }
 
