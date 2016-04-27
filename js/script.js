@@ -54,9 +54,11 @@ wordmarkTrigger.addEventListener('click', function() {
   // Trip variable controlling whether animates or not
   if (isTrippy === true) {
     isTrippy = false;
+    wordmarkTrigger.innerHTML = "Mind on everyone else"
   }
   else {
     isTrippy = true;
+    wordmarkTrigger.innerHTML = "Mind on Bae"
   }
 });
 
