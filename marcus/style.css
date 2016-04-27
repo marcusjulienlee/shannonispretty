@@ -1,0 +1,47 @@
+body {
+  background: #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+.rainbow-wordmark {
+  position: relative;
+  margin: 100px 10%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+/*
+.button-container and button are to create a centered button that also is
+absolutely positioned (so that it doesn't get hidden behind canvas)
+*/
+.button-container {
+  width: 200px;
+  margin: 0 auto;
+}
+
+button {
+  position: absolute;
+}
+
+.rainbow-wordmark__canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 110%; /* canvas is 1100px, img is 1000 */
+}
+
+.rainbow-wordmark__image {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.wordmark_trigger {
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  border: none;
+  background-color: #F262BD;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px;
+}
